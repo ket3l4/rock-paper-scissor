@@ -1,0 +1,27 @@
+body{
+    font-family: Lucida, sans-serif;
+    font-size: 2rem;
+    color: white;
+    background-color: rosybrown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    gap: 2rem;
+
+}
+
+.play{
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 15px 15px 15px 15px;
+    font-size: 2rem;
+    padding: 0.6rem;
+
+}
+.play:hover{
+    background-color: palegreen;
+    cursor: pointer ;
+}
