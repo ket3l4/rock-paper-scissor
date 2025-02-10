@@ -4,7 +4,7 @@
 <script defer src="script.js"></script>
 <head>
     <meta charset="UTF-8">
-    <title>Rock Paper Scissors</title>
+    <title>Choose a move!</title>
 </head>
 
 <!--Choose a move button-->
@@ -13,12 +13,27 @@
 <!--show result-->
 
 <body>
-    <div id="pageDiv">
-        <div id="startDiv">
-            <h1>? Rock Paper Scissors !</h1>
-            <button class="move start" onclick="toGame()">Let's Play!</button>
+    <div id="mainDiv">
+        <img class="pic player" src="img/love.png" alt="move">
+        <div class="gameDiv">
+            <div id="optionDiv">
+                <img class="option return" src="img/return.png" onclick="toStart()">
+                <img class="option restart" src="img/restart.png">
+            </div>
+            <div id="headerDiv">
+                <h2>Player & Bot</h2>
+                <p id="scoreboard">0 | 0</p>
+            </div>
+            <div class="moveDiv">
+                <button class="move rock">ROCK</button>
+                <button class="move paper">PAPER</button>
+                <button class="move scissors">SCISSORS</button>
 
+            </div>
         </div>
+        <img class="pic bot" src="img/love.png" alt="move">
+    </div>
+
         <footer>
             <div id="creditsDiv">
                 <h3>Credits</h3>
@@ -48,5 +63,6 @@
                 </div>
             </div>
         </footer>
-    </div>
+
+
 </body>
